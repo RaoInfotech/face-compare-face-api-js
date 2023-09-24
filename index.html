@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Descriptor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Face Descriptor</h1>
+    <input type="file" id="imageInput" accept="image/*" multiple>
+
+    <button id="copyButton">Copy</button>
+<textarea id="descriptorTextarea" readonly></textarea>
+    <button id="analyzeButton">Analyze</button>
+    <p>Face Descriptor: <span id="descriptor"></span></p>
+    <script src="faceapi/face-api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Descriptor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Face Descriptor</h1>
+    <input type="file" id="imageInput" accept="image/*" multiple>
+    <button id="analyzeButton">Analyze</button>
+    <button id="copyButton" style="display: none;">Copy Descriptors</button>
+    <p>Face Descriptors:</p>
+    <textarea id="descriptor" readonly></textarea>
+    <hr>
+    <h2>Query Photo Upload</h2>
+    <input type="file" id="queryImageInput" accept="image/*">
+    <button id="compareButton" disabled>Compare</button>
+    <p>Mean Distance: <span id="meanDistance"></span></p>
+    <script src="faceapi/face-api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
